@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>GitHub Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Creating_a_Repository">Creating a Repository</a>
+    <a class="nav-link" href="#Cloning_a_Repository">Cloning a Repository</a>
+    <a class="nav-link" href="#Committing_Changes">Committing Changes</a>
+    <a class="nav-link" href="#Pushing_to_GitHub">Pushing to GitHub</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>GitHub is a web-based version-control and collaboration platform for software developers.</p>
+      <p>It uses Git, the distributed version-control system created by Linus Torvalds.</p>
+      <p>GitHub provides a web-based graphical interface as well as access control and several collaboration features.</p>
+      <code>git --version</code>
+      <ul>
+        <li>Web-based Git repository hosting service</li>
+        <li>Supports Git commands and workflows</li>
+        <li>Popular among open-source communities</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Creating_a_Repository">
+      <header>Creating a Repository</header>
+      <p>Repositories are where project files and revision history are stored.</p>
+      <p>You can create a repository on GitHub by clicking the “New repository” button.</p>
+      <p>Name your repository and choose its visibility (public or private).</p>
+      <code>git init</code>
+      <code>git remote add origin https://github.com/username/repo.git</code>
+      <ul>
+        <li>Click "New" on the repositories page</li>
+        <li>Fill out the form</li>
+        <li>Initialize with README if needed</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Cloning_a_Repository">
+      <header>Cloning a Repository</header>
+      <p>Cloning allows you to create a local copy of a remote repository.</p>
+      <p>This is useful for contributing to existing projects or accessing the code offline.</p>
+      <code>git clone https://github.com/username/repo.git</code>
+      <ul>
+        <li>Navigate to the repo on GitHub</li>
+        <li>Copy the HTTPS or SSH URL</li>
+        <li>Use the git clone command</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Committing_Changes">
+      <header>Committing Changes</header>
+      <p>Committing saves your changes to the local repository.</p>
+      <p>Each commit has a unique ID and an optional message.</p>
+      <code>git add .</code>
+      <code>git commit -m "Initial commit"</code>
+      <p>Use meaningful commit messages to track changes effectively.</p>
+    </section>
+
+    <section class="main-section" id="Pushing_to_GitHub">
+      <header>Pushing to GitHub</header>
+      <p>Pushing sends your local commits to a remote GitHub repository.</p>
+      <p>This updates the remote branch with your local changes.</p>
+      <code>git push origin main</code>
+      <p>Make sure you are authenticated with GitHub before pushing.</p>
+    </section>
+  </main>
+</body>
+</html>
